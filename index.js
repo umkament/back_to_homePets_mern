@@ -8,8 +8,11 @@ import {checkAuth, handleValidationErrors} from "./utils/index.js";
 import {UserController, PetController} from "./controllers/index.js";
 
 import * as path from "path";
+import dotenv from 'dotenv';
 
 const PORT = process.env.PORT || 4440
+
+dotenv.config()
 
 //делаем подключение к базе данных mongodb
 //с помощью then проверяем, удалось ли нам подключиться
